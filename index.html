@@ -1,0 +1,265 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile UI</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Phetsarath OT;
+        }
+
+        body {
+            margin: 0;
+            background: #1e90ff;
+        }
+
+        .page {
+            padding: 30px;
+        }
+
+        
+        .navbar {
+            background: #fff;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 6px;
+        }
+
+        .logo {
+            font-weight: bold;
+            color: #1e90ff;
+        }
+
+        .navbar input {
+            flex: 1;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .menu a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        
+        .card {
+            margin-top: 25px;
+            background: #fff;
+            display: flex;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Left */
+        .left {
+            width: 30%;
+            padding: 25px;
+            background: #f9f9f9;
+        }
+
+        .left img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .section h4 {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .tag {
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .primary {
+            background: #1e90ff;
+            color: white;
+        }
+
+        .secondary {
+            background: #ccc;
+        }
+        .skill{
+            background: #ccc;
+        }
+        
+        .right {
+            width: 70%;
+            padding: 30px;
+        }
+
+        .job {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .rating {
+            margin: 10px 0;
+            color: #f5a623;
+        }
+
+        .score {
+            font-size: 22px;
+            margin-right: 10px;
+            color: #000;
+        }
+
+        .buttons {
+            margin: 15px 0;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 4px;
+            background: #1e90ff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn.outline {
+            background: transparent;
+            color: #1e90ff;
+            border: 1px solid #1e90ff;
+            margin-left: 10px;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #eee;
+        }
+        .icon {
+            color: #1e90ff;
+            margin-right: 8px;
+            width: 18px;
+            text-align: center;
+        }
+        .info p {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    
+    <div class="navbar">
+        <div class="logo">Dev Webprogram</div>
+        <input type="text" placeholder="ຊອກຫາ">
+        <div class="menu">
+            <a href="#">ຄົ້ນຫາພະນັກງານ</a>
+            <a href="#">ສົ່ງຂໍ້ຄວາມ</a>
+            <a href="#">ຕິດຕໍ່ Admin</a>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="left">
+            <img src="img/WhatsApp Image 2025-12-18 at 23.10.24.jpeg" alt="Profile">
+
+            <div class="section">
+                <h4>ອາຊີບປັດຈຸບັນ</h4>
+                <p><strong>ນັກສຶກສາ ມະຫາວິທະຍາໄລເເຫ່ງຊາດ (ມຊ) </strong></p>
+                <span class="tag primary">ສັງກັດ</span>
+                <p>ຄະນະ ວິທະຍາສາດ ທຳມະສາດ<br>ເມືອງໄຊທານີ ນະຄອນຫຼວງວຽງຈັນ</p>
+
+                <p><strong>ພາກວິຊາ ການພັດທະນາເວັບໄຊ້</strong></p>
+                <span class="tag secondary">ຖະໜົນ</span>
+                <p>ຖະໜົນໄກສອນ<br>4 ເເຍກດົງໂດກ (ມຊ) ຄະນະ ຄວທ</p>
+            </div>
+
+            <div class="section">
+                <span class="tag skill">ທັກສະ ເເລະ ຄວາມສາມາດ</span>
+                <p>
+                    Branding<br>
+                    UI/UX<br>
+                    Web Design<br>
+                    Soft Were<br>
+                    Network
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>ທ. ອະພິລັກ ເຄືອມີໄຊ</h2>
+            <span class="job">Product Designer • ນະຄອນຫຼວງວຽງຈັນ</span>
+
+            <div class="buttons">
+                <button class="btn">ສົ່ງຂໍ້ຄວາມ</button>
+                <button class="btn outline">ຕິດຕໍ່</button>
+            </div>
+
+            <hr>
+
+            <h4>ຂໍ້ມູນການຕິດຕໍ່</h4>
+        <div class="info">
+            <p><i class="fa-solid fa-phone icon"></i>
+            <strong>ເບີໂທ:</strong> (+856) 20 97682318
+            </p>
+            
+            <p><i class="fa-solid fa-location-dot icon"></i>
+            <strong>ທີ່ຢູ່:</strong> ຫໍພັກຊີເກມດົງໂດກ ໄຊທານີ ນະຄອນຫຼວງວຽງຈັນ
+            </p>
+
+            <p><i class="fa-solid fa-envelope icon"></i>
+            <strong>Email:</strong> tonnam332008@gmail.com
+            </p>
+
+            <p><i class="fa-brands fa-facebook icon"></i>
+            <strong>Facebook:</strong> Aphiluck Khuamixai
+            </p>
+
+            <p><i class="fa-brands fa-weixin icon"></i>
+            <strong>Wechat:</strong> Aphiluck (王小平)
+            </p>
+
+            <p><i class="fa-brands fa-whatsapp icon"></i>
+            <strong>WhatsApp:</strong> (+856) 20 97682318
+            </p>
+        </div>
+        <h4>ຂໍ້ມູນພື້ນຖານ</h4>
+        <div class="info">
+            <p>
+                <i class="fa-solid fa-cake-candles icon"></i>
+                <strong>ອາຍຸ:</strong> 18 ປີ
+            </p>
+
+            <p>
+                <i class="fa-solid fa-calendar icon"></i>
+                <strong>ວັນເດືອນປີເກີດ:</strong> 3 ມີນາ 2008
+            </p>
+
+            <p>
+                <i class="fa-solid fa-user icon"></i>
+                <strong>ເພດ:</strong> ຊາຍ
+            </p>
+
+            <p>
+                <i class="fa-solid fa-heart icon"></i>
+                <strong>ສະຖານະ:</strong> ໂສດ
+            </p>
+  </div>
+        </div>
+    </div>
+        </div>
+</body>
+</html>
